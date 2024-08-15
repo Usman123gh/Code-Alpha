@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio - Usman</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f0f0f0; margin: 0; padding: 0;">
+    <div style="width: 80%; margin: 0 auto; background-color: #fff; padding: 20px;">
+        <header style="background-color: #4CAF50; padding: 10px; text-align: center; color: white;">
+            <h1>Usman</h1>
+            <h2>Computer Scientist</h2>
+            <nav>
+                <ul style="list-style-type: none; padding: 0; text-align: center; margin: 0;">
+                    <li style="display: inline; margin: 0 10px;"><a href="home.html" style="color: white; text-decoration: none;">home</a></li>
+                    <li style="display: inline; margin: 0 10px;"><a href="hobbies.html" style="color: white; text-decoration: none;">hobbies</a></li>
+                    <li style="display: inline; margin: 0 10px;"><a href="skills.html" style="color: white; text-decoration: none;">personal skills</a></li>
+                    <li style="display: inline; margin: 0 10px;"><a href="contact.html" style="color: white; text-decoration: none;">contact</a></li>
+                    <li style="display: inline; margin: 0 10px;"><a href="gallery.html" style="color: white; text-decoration: none;">image gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div class="main">
+            <section style="margin: 20px 0;">
+                <h3 style="text-align: center;">Personal information</h3>
+                <div style="text-align: center;">
+                    <figure style="display: inline-block; margin: 10px;">
+                        <img src="old.png" width="200px" height="auto" alt="old">
+                        <figcaption>fig1. - this is me from many years ago</figcaption>
+                    </figure>
+                    <figure style="display: inline-block; margin: 10px;">
+                        <img src="new.png" width="200px" height="auto" alt="new">
+                        <figcaption>fig2. - this is me, a couple of months ago</figcaption>
+                    </figure>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li><p style="font-weight: bold;">Student at NUST</p></li>
+                        <li><p style="font-weight: bold;">Doing Bachelors in Computer Science</p></li>
+                    </ul>
+                </div>
+                <aside style="background-color: #f9f9f9; padding: 10px; border-left: 4px solid #ccc;">
+                    <p style="font-style: italic;">Frodo Baggins was a hobbit of the Third Age, the most famous of all Hobbits in the histories for his leading role in the Quest of the Ring. During this epic quest, he bore the One Ring to Mount Doom and there destroyed it, giving him renown like no other Halfling throughout Middle-earth. <a href="https://tolkiengateway.net/wiki/Frodo_Baggins" style="color: #0066cc;">source</a></p>
+                </aside>
+                <hr/>
+                <section style="margin: 20px 0;">
+                    <h3 style="font-size: 1.5em; color: #333;">Education</h3>
+                    <ol style="padding-left: 20px;">
+                        <li style="margin-bottom: 10px;">
+                            <h3 style="font-size: 1.2em; color: #333;">Bachelors in Computer Science</h3>
+                            <p style="margin: 0;">NUST</p>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <h3 style="font-size: 1.2em; color: #333;">A-Levels</h3>
+                            <p style="margin: 0;">Beacon House School System</p>
+                        </li>
+                    </ol>
+                </section>
+                <section style="margin: 20px 0;">
+                    <h3 style="font-size: 1.5em; color: #333;">Who Am I?</h3>
+                    <p style="margin: 0;">I like to watch Anime.</p>
+                    <p style="margin: 0;">I love to eat!</p>
+                </section>
+                <hr/>
+
+            <article style="margin: 20px 0;">
+                <svg width="200" height="200" viewBox="-100 -100 200 200">
+                    <defs>
+                        <path id="branch" d="M 0 0 L 0 -90 M 0 -20 L 20 -34 M 0 -20 L -20 -34 M 0 -40 L 20 -54 M 0 -40 L -20 -54 M 0 -60 L 20 -74 M 0 -60 L -20 -74" stroke="#E5C39C" stroke-width="5"/>
+                    </defs>
+                    <use href="#branch"/>
+                    <use href="#branch" transform="rotate(60)"/>
+                    <use href="#branch" transform="rotate(120)"/>
+                    <use href="#branch" transform="rotate(180)"/>
+                    <use href="#branch" transform="rotate(240)"/>
+                    <use href="#branch" transform="rotate(300)"/>
+                </svg>
+            </article>
+            <hr/>
+            <footer style="background-color: #4CAF50; padding: 10px; text-align: center; color: white;">what is the <time datetime="2023-02-09">date</time> today?</footer>
+        </div>
+        <footer style="background-color: #4CAF50; padding: 10px; text-align: center; color: white;">&copy; 2024 usman ghori</footer>
+    </div>
+    <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
